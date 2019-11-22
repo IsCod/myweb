@@ -10,14 +10,12 @@
         //可以用字符或字符串分割
         arr=host.split('.');
         var hostName = arr[0];
-        hostName = hostName.toUpperCase();
-
         $(document).ready(function(){
-            $("span.title").html(hostName);
+            $("span.title").html(hostName.toUpperCase());
             $('head').append('<meta name="description" content="' + metadescription[hostName] + '"/>');
             $('head').append('<meta name="keywords" content="' + metakeywords[hostName] + '"/>');
-            $('head').prepend('<title>' + hostName + ': Home</title>');
-            $('head').prepend('<meta charset="UTF-8"/>');
+            $('head').append('<title>' + hostName + ': Home</title>');
+            $('head').append('<meta charset="UTF-8"/>');
         });
 	</script>
 
