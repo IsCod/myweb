@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8"/>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="js/main.js"></script>
@@ -15,9 +14,10 @@
 
         $(document).ready(function(){
             $("span.title").html(hostName);
-            $('head').prepend('<title>' + hostName + ': Home</title>');
-            $('head').append('<meta name="keywords" content="' + metakeywords[hostName] + '"/>');
             $('head').append('<meta name="description" content="' + metadescription[hostName] + '"/>');
+            $('head').append('<meta name="keywords" content="' + metakeywords[hostName] + '"/>');
+            $('head').prepend('<title>' + hostName + ': Home</title>');
+            $('head').prepend('<meta charset="UTF-8"/>');
         });
 	</script>
 
