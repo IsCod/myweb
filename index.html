@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+	<script type="text/javascript">
+        var host = window.location.host
+        var arr=new Array();
+        //可以用字符或字符串分割
+        arr=host.split('.');
+        var hostName = arr[0];
+
+        $(document).ready(function(){
+            $("span.title").html(hostName);
+            $('head').prepend('<title>' + hostName + ': Home</title>');
+            $('head').append('<meta name="keywords" content="' + metakeywords[hostName] + '"/>');
+            $('head').append('<meta name="description" content="' + metadescription[hostName] + '"/>');
+        });
+	</script>
+
+</head>
+<body class="home">
+	<div class="header">
+		<div class="logoimge"></div>
+		<h1><span class="title">oyMm</span></h1>
+		<h2>Let <span class="title">oyMm</span> The service you</h2>
+	</div>
+	<div class="menu">
+		<ul>
+			<li id="home"><a href="/">Home</a></li>
+			<li id="public"><a href="bp/index.html">Business profile</a></li>
+			<li id="about-us"><a href="au/index.html">About-us</a></li>
+		</ul>
+	</div>
+	<div class="body">
+		<div class="about-us">
+
+			<div class="s_title">About-us: </div><div class="s_body"><span class="title">oyMm</span> is for you Solve technical problems and To provide one-stop construction services</div>
+
+			<div class="s_title">Email:</div> <div class="s_body">iscodd@gmail.com</div>
+		</div>
+	</div>
+	<div class="footer">
+		<p><span class="title">oyMm</span> © 2019</p>
+	</div>
+</body>

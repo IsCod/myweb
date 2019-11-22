@@ -1,0 +1,62 @@
+body {
+    text-align: center;
+}
+
+a {
+    color: red;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: #900b09;
+    background: transparent;
+    border-bottom: 0;
+}
+
+a:hover {
+    color: #000;
+}
+
+.header h2 {
+    color: gray;
+    font-size: 18px;
+}
+
+.body {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.about-us {
+    text-align: left;
+    /*color: #800707;*/
+}
+
+.about-us .s_title {
+    width: 200px;
+    color: #800707;
+}
+
+.about-us .s_body {
+    color: #800707;
+    font-style: oblique;
+    text-indent: 2em;
+    margin: 5px 0;
+}
+
+.menu ul {
+    font-size: 14px;
+}
+
+.menu li {
+    font-size: 18px;
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+    color: red;
+}
+
+.footer {
+    color: #777;
+    font-size: 14px;
+}
