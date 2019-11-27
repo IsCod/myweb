@@ -3,19 +3,13 @@
     <sitemap>
         <loc>http://www.mkvs.com</loc>
         <lastmod>2019-11-27</lastmod>
-        <changefreq>Home</changefreq>
-        <priority>0.1</priority>
     </sitemap>
     <sitemap>
         <loc>http://www.mkvs.com/business-profile/index.html</loc>
         <lastmod>2019-11-27</lastmod>
-        <changefreq>Business Profile</changefreq>
-        <priority>0.1</priority>
     </sitemap>
     <sitemap>
         <loc>http://www.mkvs.com/about-us/index.html</loc>
         <lastmod>2019-11-27</lastmod>
-        <changefreq>About Us</changefreq>
-        <priority>0.1</priority>
     </sitemap>
 <sitemapindex>
