@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<urlset>
-    <url>
-        <loc>http://www.yoursite.com</loc>
+<sitemapindex>
+    <sitemap>
+        <loc>http://www.mkvs.com</loc>
         <lastmod>2019-11-27</lastmod>
         <changefreq>Home</changefreq>
         <priority>0.1</priority>
-    </url>
-    <url>
-        <loc>business-profile/index.html</loc>
+    </sitemap>
+    <sitemap>
+        <loc>http://www.mkvs.com/business-profile/index.html</loc>
         <lastmod>2019-11-27</lastmod>
         <changefreq>Business Profile</changefreq>
         <priority>0.1</priority>
-    </url>
-    <url>
-        <loc>http://mkvs.com/about-us/index.html</loc>
+    </sitemap>
+    <sitemap>
+        <loc>http://www.mkvs.com/about-us/index.html</loc>
         <lastmod>2019-11-27</lastmod>
         <changefreq>About Us</changefreq>
         <priority>0.1</priority>
-    </url>
-</urlset>
+    </sitemap>
+<sitemapindex>
