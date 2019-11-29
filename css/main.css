@@ -1,5 +1,7 @@
 body {
     text-align: center;
+    background: #f4f4f4;
+    color: #333;
 }
 
 a {
@@ -8,13 +10,13 @@ a {
 
 a:link, a:visited {
     text-decoration: none;
-    color: #900b09;
+    color: #333;
     background: transparent;
     border-bottom: 0;
 }
 
 a:hover {
-    color: #000;
+    color: #0087ca;
 }
 
 .header h2 {
@@ -34,11 +36,11 @@ a:hover {
 
 .about-us .s_title {
     width: 200px;
-    color: #800707;
+    color: #333;
 }
 
 .about-us .s_body {
-    color: #800707;
+    color: #333;
     font-style: oblique;
     text-indent: 2em;
     margin: 5px 0;
@@ -57,6 +59,10 @@ a:hover {
 }
 
 .footer {
-    color: #777;
+    color: #333;
     font-size: 14px;
+    position: absolute;
+    bottom: 0;
+    padding: 0 auto;
+    width: 100%;
 }
