@@ -14,8 +14,20 @@
         var hostName = arr[0];
         $(document).ready(function(){
             $("span.title").html(hostName.toUpperCase());
-            $('head').append('<meta name="description" content="' + metadescription[hostName] + '"/>');
-            $('head').append('<meta name="keywords" content="' + metakeywords[hostName] + '"/>');
+
+             if (typeof metadescription[hostName] == 'undefined') {
+             	description = hostName;
+             }else{
+             	description = metadescription[hostName];
+             }
+             if (typeof metakeywords[hostName] == 'undefined') {
+             	metakeywords = hostName;
+             }else{
+             	metakeywords = metakeywords[hostName];
+             }
+
+            $('head').append('<meta name="description" content="' + description + '"/>');
+            $('head').append('<meta name="keywords" content="' + metakeywords + '"/>');
             $('head').append('<title>' + hostName + ': Home</title>');
             $('head').append('<meta charset="UTF-8"/>');
         });
