@@ -11,7 +11,9 @@
         var arr=new Array();
         //可以用字符或字符串分割
         arr=host.split('.');
-        var hostName = arr[0];
+        var hostNamekey = arr.length - 2;
+        var hostName = arr[hostNamekey];
+
         $(document).ready(function(){
             $("span.title").html(hostName.toUpperCase());
 
