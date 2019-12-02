@@ -25,17 +25,19 @@ ul li {
     color: gray;
     font-size: 18px;
 }
+
 .header .logoimge{
     width: 100%;
     height: 2px;
-    background: #404040;
+    background: #828181;
     position: fixed;
     top: 0;
 }
 
 .body {
-    width: 80%;
-    margin: 0 auto;
+    border-top: 1px solid #b7b7b7;
+    padding-top: 50px;
+    margin: 50px auto;
 }
 
 .about-us {
@@ -65,20 +67,41 @@ ul li {
     color: red;
 }
 
+.body div {
+    margin: 0 auto;
+}
+
+.body .brand_stories {
+    width: 990px;
+}
+
 .body .brand_stories ul li{
-    max-width: 25%;
+    width: 250px;
     margin: 0 5px;
     padding: 0;
 }
 
+.body .about-us {
+    width: 990px;
+    text-align: center;
+}
+
+.body .about-us .s_title {
+    margin: 50px auto;    
+}
+
+.body .about-us .s_body {
+    margin: 50px auto;    
+}
+
 .footer {
     color: #999;
-    background: #111;
+    background: #ececec;
     font-size: 14px;
-    position: fixed;
-    bottom: 0;
     padding: 0 auto;
     width: 100%;
+    border: 1px solid #e6e6e6;
+    padding: 5px 0;
 }
 
 .footer  a, a:link, a:visited {
