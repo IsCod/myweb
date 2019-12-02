@@ -16,6 +16,10 @@ a, a:link, a:visited {
 a:hover {
     color: #0087ca;
 }
+ul li {
+    list-style: none;
+    display: inline-block;
+}
 
 .header h2 {
     color: gray;
@@ -30,7 +34,7 @@ a:hover {
 }
 
 .body {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -57,10 +61,14 @@ a:hover {
 
 .menu li {
     font-size: 18px;
-    list-style: none;
-    display: inline-block;
     margin: 0 15px;
     color: red;
+}
+
+.body .brand_stories ul li{
+    max-width: 25%;
+    margin: 0 5px;
+    padding: 0;
 }
 
 .footer {

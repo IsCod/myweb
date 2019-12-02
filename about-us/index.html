@@ -2,19 +2,34 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8"/>
-	<link rel="stylesheet" type="text/css" href="/css/main.css">
+	<meta name="google-site-verification" content="seU2_Mnm5dv1zBI9HtrwUR4i1aRexXVGZb8Ag48_SlY" />
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="/js/main.js" charset='utf-8'></script>
+	<script src="js/main.js" charset='utf-8'></script>
 	<script type="text/javascript">
         var host = window.location.host
         var arr=new Array();
         //可以用字符或字符串分割
         arr=host.split('.');
-        var hostName = arr[0];
+        var hostNamekey = arr.length - 2;
+        var hostName = arr[hostNamekey];
+
         $(document).ready(function(){
             $("span.title").html(hostName.toUpperCase());
-            $('head').append('<meta name="description" content="' + metadescription[hostName] + '"/>');
-            $('head').append('<meta name="keywords" content="' + metakeywords[hostName] + '"/>');
+
+             if (typeof metadescription[hostName] == 'undefined') {
+             	description = hostName;
+             }else{
+             	description = metadescription[hostName];
+             }
+             if (typeof metakeywords[hostName] == 'undefined') {
+             	metakeywords = hostName;
+             }else{
+             	metakeywords = metakeywords[hostName];
+             }
+
+            $('head').append('<meta name="description" content="' + description + '"/>');
+            $('head').append('<meta name="keywords" content="' + metakeywords + '"/>');
             $('head').append('<title>' + hostName + ': About-us</title>');
             $('head').append('<meta charset="UTF-8"/>');
         });
@@ -24,20 +39,50 @@
 <body class="home">
 	<div class="header">
 		<div class="logoimge"></div>
-		<h1><span class="title">oyMm</span></h1>
-		<h2>Let <span class="title">oyMm</span> The service you</h2>
+		<h1><span class="title"></span>.com</h1>
+		<h2>Imagine your Brand in Times Square: <span class="title"></span></h2>
 	</div>
 	<div class="menu">
 		<ul>
 			<li id="home"><a href="/">Home</a></li>
+			<li id="brand_stories"><a href="/brand_stories/index.html">Brand Stories</a><li>
 			<li id="public"><a href="/business-profile/index.html">Business profile</a></li>
 			<li id="about-us"><a href="/about-us/index.html">About-us</a></li>
 		</ul>
 	</div>
 	<div class="body">
+		<div class="brand_stories">
+			<ul>
+				<li>
+					⭐
+		          	<p>This is the only .com brand of its kind</p>
+				</li>
+				<li>
+					⭐
+		          	<p>Any other extension drives traffic to this .com</p>
+				</li>
+				<li>
+					⭐
+		          <p>Almost all U.S. Fortune 500 companies use .com</p>
+				</li>
+				<li>
+					⭐
+		          	<p>Intuitive, memorable and easy to say and type</p>
+				</li>
+				<li>
+					⭐
+		          	<p>Better search engine optimization</p>
+				</li>
+				<li>
+					⭐
+		          <p>Better Brand recognition and authority</p>
+				</li>
+			</ul>
+		</div>
+
 		<div class="about-us">
 
-			<div class="s_title">About-us: </div><div class="s_body"><span class="title">oyMm</span> is for you Solve technical problems and To provide one-stop construction services</div>
+			<div class="s_title">About-us: </div><div class="s_body"><span class="title"></span> is for you Solve technical problems and To provide one-stop construction services</div>
 
 			<div class="s_title">Email:</div> <div class="s_body">iscodd@gmail.com</div>
 		</div>
@@ -64,6 +109,6 @@
 			<a href="http://aaddb.com">aaddb</a> |
 			<a href="http://almb.com">almb</a>
 		</div>
-		<div><span class="title">oyMm</span> © 2019</div>
+		<div><span class="title"></span> © 2019</div>
 	</div>
 </body>
